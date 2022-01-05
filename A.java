@@ -1,34 +1,22 @@
 import java.util.*;
 
 public class A {
-
-    static void print(int n) {
-        System.out.println(n);
-    }
-
-    static void printar(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
-
-    static void println() {
-        System.out.println();
-    }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-            int c = sc.nextInt();
-            int d = Math.abs(a + c - 2 * b);
-            if (d % 3 == 0) {
-                print(0);
+            int n = sc.nextInt();
+            int m = sc.nextInt();
+            if (m == 1) {
+                System.out.println(1);
+            } else if (n % 2 == 0) {
+                System.out.println(n);
+            } else if (n % 2 == 1) {
+                System.out.println(n - 1);
             } else {
-                print(1);
+                System.out.println(0);
             }
         }
+
     }
 }
